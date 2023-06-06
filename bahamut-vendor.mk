@@ -6,6 +6,34 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/sony/bahamut
 
 PRODUCT_COPY_FILES += \
+    vendor/sony/bahamut/proprietary/system/bin/cacaoserver:$(TARGET_COPY_OUT_SYSTEM)/bin/cacaoserver \
+    vendor/sony/bahamut/proprietary/system/etc/default-permissions/semccamera-default-permissions.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/default-permissions/semccamera-default-permissions.xml \
+    vendor/sony/bahamut/proprietary/system/etc/init/cacaoserver.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/cacaoserver.rc \
+    vendor/sony/bahamut/proprietary/system/etc/permissions/com.sonymobile.imageprocessor.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.sonymobile.imageprocessor.xml \
+    vendor/sony/bahamut/proprietary/system/etc/permissions/privapp-permissions-semccamera.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-semccamera.xml \
+    vendor/sony/bahamut/proprietary/system/etc/sysconfig/semccamera-sysconfig.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/semccamera-sysconfig.xml \
+    vendor/sony/bahamut/proprietary/system/framework/com.sonymobile.imageprocessor.bypasscamera_impl.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/com.sonymobile.imageprocessor.bypasscamera_impl.jar \
+    vendor/sony/bahamut/proprietary/system/lib/android.hidl.manager@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/android.hidl.manager@1.0.so \
+    vendor/sony/bahamut/proprietary/system/lib/libcacao_client.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libcacao_client.so \
+    vendor/sony/bahamut/proprietary/system/lib/libcacao_pal.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libcacao_pal.so \
+    vendor/sony/bahamut/proprietary/system/lib/libcacao_process_ctrl_gateway.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libcacao_process_ctrl_gateway.so \
+    vendor/sony/bahamut/proprietary/system/lib/libcacao_service.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libcacao_service.so \
+    vendor/sony/bahamut/proprietary/system/lib/libimageprocessorjni.so:$(TARGET_COPY_OUT_SYSTEM)/lib/libimageprocessorjni.so \
+    vendor/sony/bahamut/proprietary/system/lib/vendor.somc.hardware.camera.cacao@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.somc.hardware.camera.cacao@1.0.so \
+    vendor/sony/bahamut/proprietary/system/lib/vendor.somc.hardware.camera.cacao@2.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.somc.hardware.camera.cacao@2.0.so \
+    vendor/sony/bahamut/proprietary/system/lib/vendor.somc.hardware.camera.cacao@3.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.somc.hardware.camera.cacao@3.0.so \
+    vendor/sony/bahamut/proprietary/system/lib/vendor.somc.hardware.camera.cacao@3.1.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.somc.hardware.camera.cacao@3.1.so \
+    vendor/sony/bahamut/proprietary/system/lib/vendor.somc.hardware.camera.cacao@3.2.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.somc.hardware.camera.cacao@3.2.so \
+    vendor/sony/bahamut/proprietary/system/lib/vendor.somc.hardware.camera.device@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.somc.hardware.camera.device@1.0.so \
+    vendor/sony/bahamut/proprietary/system/lib/vendor.somc.hardware.camera.provider@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.somc.hardware.camera.provider@1.0.so \
+    vendor/sony/bahamut/proprietary/system/lib64/android.hidl.manager@1.0.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/android.hidl.manager@1.0.so \
+    vendor/sony/bahamut/proprietary/system/lib64/libcacao_client.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcacao_client.so \
+    vendor/sony/bahamut/proprietary/system/lib64/libcacao_pal.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcacao_pal.so \
+    vendor/sony/bahamut/proprietary/system/lib64/libimageprocessorjni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libimageprocessorjni.so \
+    vendor/sony/bahamut/proprietary/system/product/etc/permissions/com.sonymobile.camera.addon.xml:$(TARGET_COPY_OUT_SYSTEM)/product/etc/permissions/com.sonymobile.camera.addon.xml \
+    vendor/sony/bahamut/proprietary/system_ext/etc/selinux/system_ext_sepolicy.cil:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/selinux/system_ext_sepolicy.cil \
+    vendor/sony/bahamut/proprietary/system_ext/lib/android.hidl.base@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/android.hidl.base@1.0.so \
+    vendor/sony/bahamut/proprietary/system_ext/lib64/android.hidl.base@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/android.hidl.base@1.0.so \
     vendor/sony/bahamut/proprietary/framework/tcmclient.jar:$(TARGET_COPY_OUT_SYSTEM)/framework/tcmclient.jar \
     vendor/sony/bahamut/proprietary/product/etc/permissions/telephony_product_privapp-permissions-qti.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/telephony_product_privapp-permissions-qti.xml \
     vendor/sony/bahamut/proprietary/system/etc/permissions/privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-qti.xml \
@@ -150,4 +178,11 @@ PRODUCT_PACKAGES += \
     WfdService \
     ims \
     qcrilmsgtunnel \
-    WfdCommon
+    WfdCommon \
+    SemcCameraUI-xxhdpi-release \
+    TimeShiftCamera-release \
+    CameraAddonPermission \
+    CameraCommonPermission \
+    CameraExtensionPermission \
+    ImageProcessorPermission \
+
